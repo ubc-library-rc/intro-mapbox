@@ -1,0 +1,98 @@
+{"0": {
+    "doc": "Acknowledgements",
+    "title": "Acknowledgements",
+    "content": "Land Acknowledgement . UBC Vancouver is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam), səl̓ilwətaɁɬ təməxʷ (Tsleil-Waututh), Stz’uminus, S’ólh Téméxw (Stó:lō), Skwxwú7mesh-ulh Temíx̱w (Squamish), and Coast Salish peoples. Please take a moment to explore native-land.ca so that you can visualize the indigenous territories, languages, and treaties in your area. Site Template . Site template adapted from the just-the-docs Jekyll template created by Patrick Marsceil and available under the MIT License. ",
+    "url": "http://localhost:4000/content/acknowledgements.html",
+    "relUrl": "/content/acknowledgements.html"
+  },"1": {
+    "doc": "Environment Setup",
+    "title": "Setting up a Developer Environment",
+    "content": " ",
+    "url": "http://localhost:4000/content/developer-environment.html#setting-up-a-developer-environment",
+    "relUrl": "/content/developer-environment.html#setting-up-a-developer-environment"
+  },"2": {
+    "doc": "Environment Setup",
+    "title": "Code Editor",
+    "content": "like (Visual Studio Code)[https://code.visualstudio.com/download] . ",
+    "url": "http://localhost:4000/content/developer-environment.html#code-editor",
+    "relUrl": "/content/developer-environment.html#code-editor"
+  },"3": {
+    "doc": "Environment Setup",
+    "title": "Downloading MapboxGL",
+    "content": "in terminal npm install --save mapbox-gl . or other ways . ",
+    "url": "http://localhost:4000/content/developer-environment.html#downloading-mapboxgl",
+    "relUrl": "/content/developer-environment.html#downloading-mapboxgl"
+  },"4": {
+    "doc": "Environment Setup",
+    "title": "Access Token",
+    "content": "(create acess token)[https://account.mapbox.com/access-tokens/] . ",
+    "url": "http://localhost:4000/content/developer-environment.html#access-token",
+    "relUrl": "/content/developer-environment.html#access-token"
+  },"5": {
+    "doc": "Environment Setup",
+    "title": "Environment Setup",
+    "content": " ",
+    "url": "http://localhost:4000/content/developer-environment.html",
+    "relUrl": "/content/developer-environment.html"
+  },"6": {
+    "doc": "Hands On",
+    "title": "Hands On",
+    "content": " ",
+    "url": "http://localhost:4000/content/hands-on.html",
+    "relUrl": "/content/hands-on.html"
+  },"7": {
+    "doc": "Introduction to Mapbox",
+    "title": "Note: this workshop is in development and not yet complete.",
+    "content": "Description… . ",
+    "url": "http://localhost:4000/#note-this-workshop-is-in-development-and-not-yet-complete",
+    "relUrl": "/#note-this-workshop-is-in-development-and-not-yet-complete"
+  },"8": {
+    "doc": "Introduction to Mapbox",
+    "title": "Learning objectives",
+    "content": "At the end of this workshop, you will be able to: 1. 2. 3. ",
+    "url": "http://localhost:4000/#learning-objectives",
+    "relUrl": "/#learning-objectives"
+  },"9": {
+    "doc": "Introduction to Mapbox",
+    "title": "Resources",
+    "content": ". | [eg. link to external slides] | . ",
+    "url": "http://localhost:4000/#resources",
+    "relUrl": "/#resources"
+  },"10": {
+    "doc": "Introduction to Mapbox",
+    "title": "Introduction to Mapbox",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"11": {
+    "doc": "Map Boilerplate",
+    "title": "Boiler plate code",
+    "content": "explain what this is - remix from leaflet tutorial . &lt;html&gt; &lt;head&gt; &lt;title&gt;Boiler Plate Code&lt;/title&gt; &lt;script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'&gt;&lt;/script&gt; &lt;link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' /&gt; &lt;/head&gt; &lt;body&gt; &lt;div id='map' style='width: 700px; height: 600px; margin-left: 23%;'&gt;&lt;/div&gt; &lt;script&gt; mapboxgl.accessToken = 'pk.eyJ1IjoibGNyYW5kYWxsb3JhIiwiYSI6ImNraGM2d2EwYjA2MXEzMnBocmdscmwzb2YifQ.qLzdLjST_taS3roJDpdDjg'; //replace with your access token const map = new mapboxgl.Map({ container: 'map', // container ID style: 'mapbox://styles/mapbox/streets-v11', // style URL try other styles from https://www.mapbox.com/gallery/ center: [-123.11738086752482, 49.25090077610571], // starting position [lng, lat] zoom: 10, // starting zoom projection: 'globe' // display the map as a 3D globe }); map.on('style.load', () =&gt; { map.setFog({}); // Set the default atmosphere style }); &lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . ",
+    "url": "http://localhost:4000/content/map-boilernplate.html#boiler-plate-code",
+    "relUrl": "/content/map-boilernplate.html#boiler-plate-code"
+  },"12": {
+    "doc": "Map Boilerplate",
+    "title": "Map Boilerplate",
+    "content": " ",
+    "url": "http://localhost:4000/content/map-boilernplate.html",
+    "relUrl": "/content/map-boilernplate.html"
+  },"13": {
+    "doc": "Mapbox GL JS",
+    "title": "javascript library",
+    "content": "uses etc examples . ",
+    "url": "http://localhost:4000/mapbox-gl-js.html#javascript-library",
+    "relUrl": "/mapbox-gl-js.html#javascript-library"
+  },"14": {
+    "doc": "Mapbox GL JS",
+    "title": "Mapbox GL JS",
+    "content": " ",
+    "url": "http://localhost:4000/mapbox-gl-js.html",
+    "relUrl": "/mapbox-gl-js.html"
+  },"15": {
+    "doc": "What is Mapbox?",
+    "title": "What is Mapbox?",
+    "content": ". | web map –&gt; leaflet –&gt; Mapbox (vector vs tile –&gt; faster loading; uses) | . ",
+    "url": "http://localhost:4000/mapbox.html",
+    "relUrl": "/mapbox.html"
+  }
+}

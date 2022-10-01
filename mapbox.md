@@ -10,3 +10,4 @@ parent: Introduction to Mapbox
 - web map --> leaflet --> Mapbox (vector vs tile --> faster loading; uses)
 
 
+
