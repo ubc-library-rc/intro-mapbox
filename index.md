@@ -7,7 +7,7 @@ has_children: true
 
 ## Note: this workshop is in development and not yet complete.
 
-This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skillset and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided coding environment set-up, and a hands-on where we will modify given code to design an interactive map powered by Mapbox and Leaflet. If you are unfamilliar with Leaflet, we recommend you first checkout our  [Web-mapping with Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/). 
+This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skillset and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided coding environment set-up, and a hands-on where we will modify given code to design an interactive map powered by Mapbox and Leaflet. 
 
 ## Learning objectives
 
@@ -17,6 +17,14 @@ At the end of this workshop you will be able to:
 3.
 
 
+### Prerequisites
+Making maps is hard. And, without practice, working in the web is hard too. 
+
+If you are unfamilliar with Leaflet, we recommend you first checkout our  [Web-mapping with Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/). Familiarity with cartographic principles and a basic understanding of what code is and does will make diving into web mapping easier. Refer to these resources at any time:
+
+- **Intro level knowledge of computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.
+- **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You're not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
+- **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
 
 
 #### Geospatial Information Resources at UBC:
