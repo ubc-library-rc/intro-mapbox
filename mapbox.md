@@ -2,7 +2,7 @@
 layout: default
 title: What is Mapbox?
 nav_order: 1
-parent: Introduction to Mapbox
+parent: Introduction
 ---
 
 # What is Mapbox?
