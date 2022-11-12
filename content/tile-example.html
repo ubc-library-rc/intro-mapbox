@@ -1,0 +1,33 @@
+<html>
+  <head>
+
+    <title>Leaflet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Source for your Leaflet JavaScript and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="./ubcbuildings.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div id='mapid' style='width: 700px; height: 600px; margin-left: 23%;'></div>
+
+    <script>
+
+      // Initialize your map, sets the initial view location and zoom level
+      var mymap = L.map('mapid').setView([49.2827, -123.2], 3.3);
+
+      //Load the tile layer, paste in new tile layer of choice.
+      var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 19,
+      ext: 'png'
+        }).addTo(mymap);
+
+    </script>
+  </body>
+</html>
