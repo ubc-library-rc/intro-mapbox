@@ -15,8 +15,8 @@ parent: Introduction
 ### Mapbox JS Classic 
 Mapbox JS Classic is the classic JS library based on Leaflet.js. This product is no longer being actively developed, but is still a good resource for learning, especially the examples.
 
-### MapboxGL JS 
-[MapboxGL JS is](https://www.mapbox.com/mapbox-gljs) the vector tile framework replacing the classic JS. Examples of use are immensely helpful for tinkering to understand how it works. 
+### Mapbox GL JS 
+[Mapbox GL JS is](https://www.mapbox.com/mapbox-gljs) the vector tile framework replacing the classic JS. Examples of use are immensely helpful for tinkering to understand how it works. This workshop focuses on designing maps for web display using Mapbox GL JS. 
 
 ### Mapbox Studio
 For those interested in customizing data and tiles, Mapbox Studio is for you. The Studio Manual is a starting point for learning, and so are the how-to videos.
