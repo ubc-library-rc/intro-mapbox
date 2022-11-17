@@ -5,19 +5,18 @@ nav_order: 2
 parent: Introduction
 ---
 
-#### "Mapbox GL JS is a JavaScript library for vector maps on the Web."
+## "Mapbox GL JS is a JavaScript library for vector maps on the Web."
 
-Like Leaflet, Mapbox GL JS is a collection of JavaScript code that builds vector maps for web display. What makes Mapbox GL JS so advantageous for web mapping is that vector graphics load much faster than
+Like Leaflet, [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) is a collection of JavaScript code that builds customizable maps for web display. What makes Mapbox GL JS so advantageous for web mapping is its use of vector graphics rather than sets of static tile layers. Vectors are graphics composed of points, lines, and polygons. Vector layers are constructed with JavaScript while CSS is responsible for their styling. 
 
-allows you to style maps 
+### Tile vs. Vector Layer Maps 
+Compared to tile layers, vector layers render on the fly (?), meaning they load much faster and require less storage capacity. Additionally, web maps utilizing vector graphics are freed from discreet zoom levels as vector layers have no set scales at which they can be rendered. Try zooming slowly in and out of the following two maps. Notice how it takes a moment for tile layers to load as you zoom between scales. 
 
- - web map --> leaflet --> Mapbox (vector vs tile --> faster loading; uses)
- no set scales - vs discreet zoom levels 
+ <iframe src="./content/tile-example.html"></iframe>
+ <br>   
 
-## Tile vs. Vector Maps 
-
- <iframe src="./content/tile-example.html" style="width: 700px; height: 600px; margin-left: 23%;"> </iframe>
+ <iframe src="./content/vector-example.html"></iframe>
 
 
-## javascript library
-uses etc examples 
+In the next section we will look more closely at some code and learn what each statement does and how different languages work together to design and execute a map for display in a web browser. 
+
