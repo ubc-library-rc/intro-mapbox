@@ -4,22 +4,27 @@ title: Introduction
 nav_order: 1
 has_children: true
 ---
-
-## !!Note: this workshop is in development and not yet complete.!!
-
-# Designing web-maps with Mapbox 
+# Designing web maps with Mapbox 
 
 This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skillset and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided developer environment set-up, and a hands-on portion where we will modify given code to design an interactive map powered by Mapbox and Leaflet. <!--or just Mapbox?-->
 
 ## Learning objectives
 
 At the end of this workshop you will:
-1.  
-2. 
-3. 
-    
-    
+<!--* *1*{: .circle .circle-yellow} 
+* *2*{: .circle .circle-green} 
+* *3*{: .circle .circle-purple} 
+* *4*{: .circle .circle-red} -->
+*1*{: .circle .circle-purple} Understand the advantages of web mapping using Mapbox GL JS
+*2*{: .circle .circle-purple} Be familiar with the elements of code that make a web map work 
+*3*{: .circle .circle-purple} Know how to modify code to customize an interactive map of your own, and
+*4*{: .circle .circle-purple} Have the basic skills to pursue further tutorials more focused on your individual research interests or project needs  
 
+    
+        
+  
+
+    
 ### Prerequisites
 Making maps is hard. And, without practice, working in the web is hard too. If you are unfamiliar with Leaflet, we recommend you checkout our [Web-mapping with Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/). Additionally, understanding basic cartographic principles and a basic understanding of what code is and does will make diving into web mapping easier. Refer to these resources at any time:     
 

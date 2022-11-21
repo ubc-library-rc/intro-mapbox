@@ -18,4 +18,5 @@ $ npm install --save mapbox-gl
 ```
     
     
+ <br>      
 If you are experiencing technical issues it is likely due to the way your computer is configured. Use Mapbox's [installation guide](https://docs.mapbox.com/mapbox-gl-js/guides/install/) to help troubleshoot. 

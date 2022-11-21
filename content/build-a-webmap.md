@@ -4,12 +4,13 @@ title: Build a Webmap
 nav_order: 3
 has_children: true
 ---
+# Hands-On: build an interactive web map powered by Mapbox 
+This section will guide you through 
 
-In this section we will ...
-* *1*{: .circle .circle-yellow} 
-* *2*{: .circle .circle-green} 
-* *3*{: .circle .circle-purple} 
-* *4*{: .circle .circle-red} 
+To begin, we will look at the code for a basic map - seeing what each element does.
+Then, build upon existing code to make an interactive map showing public parks in the city of vancouver. 
+You will work in the mapbox stuido interface? or code? or both? 
+
 
 
 ### Workshop Data
