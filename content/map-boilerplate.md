@@ -48,7 +48,8 @@ Now Let's look at what's powering this map. Navigate back to your "mapbox-intro"
 ```
 
 
-The HTML document is split into two main sections: the <code>head</code> and the <code>body</code>. Each of these sections are contained within opening < tags > and closing </ tags >. Notice that because the document is in HTML format, everything is contained within the html tag. 
+The HTML document is split into two main sections: the <code>head</code> and the <code>body</code>. Each of these sections are contained within opening < tags > and closing </ tags >. Notice that because the document is in HTML format, everything is contained within the html tag.     
+
 
 ```html
 <html>
