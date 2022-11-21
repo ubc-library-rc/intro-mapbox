@@ -11,9 +11,12 @@ This workshop is intended for anyone with a basic understanding of web mapping w
 ## Learning objectives
 
 At the end of this workshop you will:
-*1*{: .circle .circle-purple} Understand the advantages of web mapping using Mapbox GL JS
-*2*{: .circle .circle-purple} Be familiar with the elements of code that make a web map work 
-*3*{: .circle .circle-purple} Know how to modify code to customize an interactive map of your own, and
+*1*{: .circle .circle-purple} Understand the advantages of web mapping using Mapbox GL JS    
+    
+*2*{: .circle .circle-purple} Be familiar with the elements of code that make a web map work    
+    
+*3*{: .circle .circle-purple} Know how to modify code to customize an interactive map of your own, and    
+    
 *4*{: .circle .circle-purple} Have the basic skills to pursue further tutorials more focused on your individual research interests or project needs  
 
     
@@ -27,10 +30,11 @@ Making maps is hard. And, without practice, working in the web is hard too. If y
 - **Intro level knowledge of computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.
 - **Intro level knowledge of HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You're not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.
 - **Understanding of basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
-
     
-          
+        
 
+       
+        
 #### Geospatial Information Resources at UBC:
 - General Informational website for all things UBC GIS: [gis.ubc.ca](http://gis.ubc.ca/)    
 - UBC Library's guide for finding and working with GIS resources: [guides.library.ubc.ca/gis](http://guides.library.ubc.ca/gis)
