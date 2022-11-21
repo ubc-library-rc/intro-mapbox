@@ -10,7 +10,8 @@ This workshop is intended for anyone with a basic understanding of web mapping w
 
 ## Learning objectives
 
-At the end of this workshop you will:
+At the end of this workshop you will:    
+    
 *1*{: .circle .circle-purple} Understand the advantages of web mapping using Mapbox GL JS    
     
 *2*{: .circle .circle-purple} Be familiar with the elements of code that make a web map work    
