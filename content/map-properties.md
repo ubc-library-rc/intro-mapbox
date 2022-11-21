@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changing Properties 
+title: Customizing Properties 
 nav_order: 2
 parent: Build a Webmap
 ---
@@ -21,9 +21,20 @@ parent: Build a Webmap
             map.setFog({}); // Set the default atmosphere style
         });
     </script>
-</body>```
+</body>
+```
 
+### Container 
 
-
+### Style 
 
 (styles)[https://docs.mapbox.com/api/maps/styles/#mapbox-styles]
+
+### Center
+
+
+### Zoom 
+
+
+### Projection
+
