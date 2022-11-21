@@ -10,6 +10,7 @@ The shell (sometimes referred to as the “Unix shell” after the operating sys
     
 ### Download Mapbox GL
 Copy & paste the following command into your terminal. Then hit return. 
+
 Input
 {: .label .label-green }
 ```sh

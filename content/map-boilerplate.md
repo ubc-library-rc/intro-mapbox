@@ -5,19 +5,25 @@ nav_order: 1
 parent: Build a Webmap
 ---
 
-## Boilerplate code
+## Map Boilerplate
 explain what this is - remix from leaflet tutorial
 
- 
-{: .label .label-green } To Do
-Navigate into your "mapbox-intro" folder and open the boilerplate1.html in your code editor. 
 
+{: .label .label-green } To Do
+DOWNLOAD FIRST 
+Navigate into your "mapbox-intro" folder and locate the file ```boilerplate1.html```. Right click and open it with your preferred internet browser. You should see an interactive map like this:
+     
+<iframe src="./content/boilerplate1.html" style="width:100%; height:400px; border:none;"></iframe>
+     
+    
+Now Let's look at what's powering this map. Navigate back to your "mapbox-intro" folder and right-click ```boilerplate1.html``` to open it with your source code editor. 
 Your code will look like this: 
 
 ```html
 <html>
+
 <head>
-    <title>Web Map</title>
+    <title>Boiler Plate Code</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
 </head>
@@ -25,7 +31,7 @@ Your code will look like this:
 <body>
     <div id='map' style='width: 700px; height: 600px; margin-left: 23%;'></div>
     <script>
-        mapboxgl.accessToken = 'PASTE_YOUR_ACCESS_TOKEN_HERE'; //replace with your access token
+        mapboxgl.accessToken = 'YOUR_ACCESS_TOKEN_HERE'; //replace with your access token
         const map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/streets-v11', // style URL try other styles from https://www.mapbox.com/gallery/
@@ -38,8 +44,8 @@ Your code will look like this:
         });
     </script>
 </body>
-</html> 
 
+</html>
 ```
 
 To Do 
