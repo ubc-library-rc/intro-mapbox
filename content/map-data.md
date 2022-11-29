@@ -7,6 +7,7 @@ parent: Build a Webmap
 
 ## Map Data
 If you haven't already, click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
+    
 [Download Data](mapbox-intro.zip){: .btn .btn-blue }
 
 Inside the workshop data folder you will see the boilerplate.html file we looked at earlier, as well as `van-parks.geojson` and `local-area-boundary.geojson`. Both are geospatial files downloaded from Vancouver's open data portal. [van-parks.geojson](https://opendata.vancouver.ca/explore/dataset/parks/map/?location=14,49.2717,-123.12271) contains points for 216 of vancouver's parks and [local-area-boundary.geojson](https://opendata.vancouver.ca/explore/dataset/local-area-boundary/map/?disjunctive.name&location=12,49.24898,-123.09168) contains polygons representing neighbourhood boundaries. Follow the links to view each dataset as a table or map in the open data portal.  
@@ -60,7 +61,7 @@ To Do
 4. Open [geojson.io](http://geojson.io) again in a new tab. Drag and drop first `local-area-boundary.geojson` then `van-parks.geojson` into the </>JSON panel. This is a quick and easy way to visualize the two geospatial datasets we'll use in this workshop. Now let's return to our boilerplate code and add today's data to the basemap.
 
 
-
+![Workshop Data in geojson.io](./images/workshop-data-geojsonio_20221127.png)
 
 
 
