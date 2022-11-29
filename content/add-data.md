@@ -6,6 +6,7 @@ parent: Build a Webmap
 ---
 
 ## Add Data
+
 drag both files into new geojson.io first
 
 then code 
