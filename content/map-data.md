@@ -5,7 +5,7 @@ nav_order: 3
 parent: Build a Webmap
 ---
 
-## Map Data
+# Map Data
 If you haven't already, click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
     
 [Download Data](mapbox-intro.zip){: .btn .btn-blue }
@@ -13,9 +13,9 @@ If you haven't already, click on the 'Download Data' button below to start the d
 Inside the workshop data folder you will see the boilerplate.html file we looked at earlier, as well as `van-parks.geojson` and `local-area-boundary.geojson`. Both are geospatial files downloaded from Vancouver's open data portal. [van-parks.geojson](https://opendata.vancouver.ca/explore/dataset/parks/map/?location=14,49.2717,-123.12271) contains points for 216 of vancouver's parks and [local-area-boundary.geojson](https://opendata.vancouver.ca/explore/dataset/local-area-boundary/map/?disjunctive.name&location=12,49.24898,-123.09168) contains polygons representing neighbourhood boundaries. Follow the links to view each dataset as a table or map in the open data portal.  
 
 ## GeoJSON
-The vector layers or map tiles of your interactive basemap provide spatial context for the data you wish spatially visualize. Your data is rendered above your chosen basemap and is called the "data layer", "map content" or sometimes "map features". Usually your data is vector data so you can click and interact with it, but you can also add raster data as well.      
+The vector layers or map tiles of your interactive basemap provide spatial context for the data you wish to spatially visualize. Your data is rendered on top of your chosen basemap and is called the "data layer", "map content" or sometimes "map features." Usually your data is vector data so you can click and interact with it, but you can also add raster data as well.      
 
-If you’re a GIS user, you have encountered a Shapefile. Shapefiles are the industry standard file type for geographic vector data. If you’ve ever tried to share a Shapefile in the web, you’ve probably had some problems, or needed to transform your file into something else. Shapefiles are meant to be used in GIS software and weren’t designed to be displayed in the web. The [GeoJSON](https://geojson.org/) format on the other hand is a geographic file type specifically meant for the web. They’re “easy for humans to read, and easy for machines to read”, meaning that they’re a lightweight, simplified format so your average web browser can use them, and they’re also fairly easy to understand if you want to view and edit them in a code editor. Here’s a GeoJSON point for one park in Vancouver: 
+If you’re a GIS user, you have encountered a Shapefile before. Shapefiles are the industry standard file type for geographic vector data. If you’ve ever tried to share a Shapefile in the web, you’ve probably had some problems, or needed to transform your file into something else. Shapefiles are meant to be used in GIS software and weren’t designed to be displayed in the web. The [GeoJSON](https://geojson.org/) format on the other hand is a geographic file type specifically meant for the web. GeoJSON files are “easy for humans to read, and easy for machines to read”, meaning that they’re a lightweight, simplified format so your average web browser can use them, and they’re also fairly easy to make sense of if you want to view and edit them in a code editor. Here’s a single point for a park in Vancouver in GeoJSON  format: 
 
 ```json
     {
