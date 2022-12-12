@@ -12,4 +12,4 @@ In order to write the code that builds and renders your web maps you need a few 
 3. Downloading the Mapbox GL JS graphics library requires running one simple command in your computer's terminal. If you have never worked in the terminal, consider browsing the Research Common's introductory workshop [here](https://ubc-library-rc.github.io/intro-shell/content/01-what-is-the-shell.html). <!--see if theres anything else that must be downloaded first -- eg leaflet) --> 
 4. Lastly, if you haven't already, you should download a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) for swift and efficient map construction. 
 
-Click through the following sub-pages for a detailed guide to setting up a developer environment suited for this workshop. 
+Click through the following sub-pages for a step-by-step guide to setting up a developer environment suited for this workshop. 

@@ -11,11 +11,11 @@ explain 'basemap.' explain boilerplate code concept.
 
 To Do
 {: .label .label-green } 
-Navigate into your "mapbox-intro" folder and locate the file ```boilerplate.html```. Replace ```PASTE_YOUR_ACCESS_TOKEN_HERE``` with your Mapbox Access Token generated earlier in this workshop. Then, save your HTML file and open it in your web browser. You may need to "right-click" and "open with" your browser of choice. You should see an interactive basemap centered on Vancouver, Canada. Use the controls to zoom in and out and pan around your web map.
+Navigate into your "intro-mapbox" folder and locate the file ```boilerplate.html```. Replace ```PASTE_YOUR_ACCESS_TOKEN_HERE``` with your Mapbox Access Token generated earlier in this workshop. Then, save your HTML file and open it in your web browser. You may need to "right-click" and "open with" your browser of choice. You should see an interactive basemap centered on Vancouver, Canada. Use the controls to zoom in and out and pan around your web map.
 
      
 ## Basemap Code 
-Now Let's look at what's powering this map. Navigate back to your "mapbox-intro" folder and right-click ```boilerplate.html``` to open it with your source code editor. Your code will look like this: 
+Now Let's look at what's powering this map. Navigate back to your "intro-mapbox" folder and right-click ```boilerplate.html``` to open it with your source code editor. Your code will look like this: 
 
 ```html
 <html>
@@ -29,16 +29,13 @@ Now Let's look at what's powering this map. Navigate back to your "mapbox-intro"
 <body>
     <div id='map' style='width: 700px; height: 600px; margin-left: 23%;'></div>
     <script>
-        mapboxgl.accessToken = ''; //replace with your access token
+        mapboxgl.accessToken = 'YOUR_ACCESS_TOKEN'; //replace with your access token
         const map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/streets-v11', // style URL try other styles from https://www.mapbox.com/gallery/
             center: [-123.11738086752482, 49.25090077610571], // starting position [lng, lat]
             zoom: 10, // starting zoom
             projection: 'globe' // display the map as a 3D globe
-        });
-        map.on('style.load', () => {
-            map.setFog({}); // Set the default atmosphere style
         });
     </script>
 </body>
@@ -48,6 +45,7 @@ Now Let's look at what's powering this map. Navigate back to your "mapbox-intro"
 ```
 
 
+<br>
 The HTML document is split into two main sections: the <code>head</code> and the <code>body</code>. Each of these sections are contained within opening < tags > and closing </ tags >. Notice that because the document is in HTML format, everything is contained within the html tag.     
 
 
