@@ -7,10 +7,9 @@ parent: Build a Webmap
 
 ## Add Data
 
-drag both files into new geojson.io first
+### upload dataset to mapbox 
 
-then code 
+https://studio.mapbox.com/datasets/
 
-Add park data as markers 
-
-Bring in neighborhood polygons/ outlines 
+Goal of map: 
+remove neighbourhoods as clustering factor
