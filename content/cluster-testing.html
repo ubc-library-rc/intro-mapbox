@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Boiler Plate Code</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div id='map' style='width: 700px; height: 600px; margin-left: 23%;'></div>
+    <script>
+        //from boiler-plate code. function const map () renders as expected and
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw'; //replace with your access token
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL try other styles from https://www.mapbox.com/gallery/
+            center: [-123.11738086752482, 49.25090077610571], // starting position [lng, lat]
+            zoom: 10.7, // starting zoom
+            projection: 'globe' // display the map as a 3D globe
+        });
+
+        //next is to connect a geoJSON dataset comprising 216 park points and their attributes, 
+        //then use Mapbox cluster function to cluster them according to desired symbology/interactivity specifications
+        //documentation for Mapbox Cluster Function: (https://docs.mapbox.com/mapbox-gl-js/example/cluster/)
+
+        //its at this point that errors occur retrieving the geoJSON data. The basemap continues to render but no data appears. 
+        map.on('load', () => {
+            map.addSource('parks', {
+                type: 'geojson',
+                data: 'https://api.mapbox.com/v4/{lilydemet.clblalnn8002r21o98fltaox5-2esy0}/page.html?access_token=pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw',
+                // The syntax type: '' followed by data: '' is correct and I followed the API formatting for datasets (https://docs.mapbox.com/help/glossary/datasets-api/) and tilesets (https://docs.mapbox.com/help/glossary/mapbox-tiling-service/) respectively. geoJSON files can be used in mapbox as either datasets or tilesets (https://docs.mapbox.com/help/glossary/geojson/). I made sure the geoJSON file as both a dataset and tileset was set to public visibility. I also added the Go Live port server (127.0.0.1:5500) to the access token's URLS
+
+                // what happens... 
+
+                //When I link it as a dataset (data: 'https://api.mapbox.com/datasets/v1/{lilydemet}/{clblalnn8002r21o98fltaox5}?access_token=pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw') I get the error {"message":"No such user"}. Mapbox's troubleshooting site says this means the access token used does not match the account used to create the map/store the data. However, both the token and dataset are from my account: lilydemet
+
+                //When I link it as a tileset (data: 'https://api.mapbox.com/v4/{lilydemet.clblalnn8002r21o98fltaox5-2esy0}/page.html?access_token=pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw') returns {not found}
+                //When I copy and paste the tileset link into a web browser I get the message {"message":"Forbidden"}
+
+                cluster: true,
+                clusterMaxZoom: 14,
+                clusterRadius: 5 //not sure whether this should be bigger or smaller or what its units are
+            });
+            
+            // 
+            map.addLayer({
+                id: 'clusters',
+                type: 'circle',
+                source: 'parks',
+                filter: ['has', 'point_count'],
+                paint: {
+                    // Use step expressions (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-step)
+                    // with three steps to implement three types of circles:
+                    //   * Blue, 20px circles when point count is less than 100
+                    //   * Yellow, 30px circles when point count is between 100 and 750
+                    //   * Pink, 40px circles when point count is greater than or equal to 750
+                    'circle-color': [
+                        '#008000',
+                    ],
+                    'circle-radius': [
+                        'step',
+                        ['get', 'point_count'],
+                        2,
+                        50,
+                        5,
+                        210,
+                        10
+                    ]
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
