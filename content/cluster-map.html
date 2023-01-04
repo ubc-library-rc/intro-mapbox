@@ -2,56 +2,106 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
     <title>Create and style clusters</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
-    <div id="map"></div>
+    <div id='map' style='width: 700px; height: 600px; margin-left: 23%;'></div>
 
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw';
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw'; //replace with your access token
         const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/outdoors-v12',
-            center: [-123.08922840287957, 49.25056462018751],
-            zoom: 11
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL try other styles from https://www.mapbox.com/gallery/
+            center: [-123.11738086752482, 49.25090077610571], // starting position [lng, lat]
+            zoom: 10.7, // starting zoom
+            projection: 'globe' // display the map as a 3D globe
         });
+
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+
 
         map.on('load', () => {
             map.addSource('parks', {
                 type: 'geojson',
-                data: 'https://github.com/ubc-library-rc/intro-mapbox/blob/main/content/parks.geojson'
-                //data: 'https://api.mapbox.com/datasets/v1/{lilydemet}/{clblalnn8002r21o98fltaox5}?access_token=pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw'
-                //link for dataset --> says no such user data: 'https://api.mapbox.com/datasets/v1/{lilydemet}/{clblalnn8002r21o98fltaox5}?access_token=pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw'
-                // link for tileset --> returns {not found} 'https://api.mapbox.com/v4/{lilydemet.clblalnn8002r21o98fltaox5-2esy0}/page.html?access_token=pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw'
-                //i used the access token from the same account i used to create the dataset and  i followed the api instructions for geojson (https://docs.mapbox.com/help/glossary/datasets-api/) (https://docs.mapbox.com/help/glossary/geojson/). 
-                //I tried linking to geojson locally and also github permalink but to no avail either. 
-                // https://docs.mapbox.com/help/troubleshooting/working-with-large-geojson-data/
-                // data: 'https://github.com/ubc-library-rc/intro-mapbox/blob/main/content/parks.geojson' 
-                //or
-                //data: 'https://github.com/ubc-library-rc/intro-mapbox/blob/f7ba5551cd7296962ee76a58943c4ce55e96a62f/content/parks.geojson'
-                //these at least take you to the data
-                //data: './data/van-parks.geojson'
-                
+                data: './data/van-parks.geojson',
+                cluster: true,
+                clusterMaxZoom: 14,
+                clusterRadius: 50
+            });
+
+            map.addLayer({
+                'id': 'park-markers',
+                'type': 'circle',
+                'source': 'parks',
+                'filter': ['has', 'point_count'],
+                'paint': {
+                    'circle-color': '#008000',
+                    'circle-radius': 14,
+                    /*[
+                        'step',
+                        ['get', 'point_count'],
+                        10,
+                        80,
+                        15,
+                        216,
+                        25
+            
+                    ],*/
+                }
+            });
+
+            //display individual parks once zoomed in
+            map.addLayer({
+                id: 'unclustered-point',
+                type: 'circle',
+                source: 'parks',
+                minzoom: 13.7,
+                paint: {
+                    'circle-color': '#f542da',
+                    'circle-radius': 4,
+                }
+            });
+
+            //add point count to cluster symbol 
+            map.addLayer({
+                id: 'cluster-count',
+                type: 'symbol',
+                source: 'parks',
+                filter: ['has', 'point_count'],
+                layout: {
+                    'text-field': ['get', 'point_count_abbreviated'],
+                    'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+                    'text-size': 12
+                },
+                paint: {
+                    'text-color': '#ffffff'
+                }
+            });
+
+            map.on('click', 'unclustered-point', (e) => {
+                const features = map.queryRenderedFeatures(e.point, {
+                    layers: ['unclustered-point']
+                });
+                const name = features[0].properties.name;
+                new mapboxgl.Popup(name)
+                    .addTo(map);
+            });
+
+
+
+
+
+
+
+
         });
-    });
+
+
+
 
     </script>
 
