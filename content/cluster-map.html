@@ -25,6 +25,7 @@
 
 
         map.on('load', () => {
+
             map.addSource('parks', {
                 type: 'geojson',
                 data: './data/van-parks.geojson',
@@ -33,6 +34,8 @@
                 clusterRadius: 50
             });
 
+            //add circle symbols for clusters
+            //step function
             map.addLayer({
                 'id': 'park-markers',
                 'type': 'circle',
@@ -40,29 +43,39 @@
                 'filter': ['has', 'point_count'],
                 'paint': {
                     'circle-color': '#008000',
-                    'circle-radius': 14,
-                    /*[
+                    'circle-radius': [
                         'step',
                         ['get', 'point_count'],
-                        10,
-                        80,
+                        12,
+                        3,
                         15,
+                        5,
+                        20,
+                        10,
+                        25,
+                        20,
+                        25,
+                        30,
+                        35,
+                        100,
+                        40,
                         216,
-                        25
-            
-                    ],*/
+                        50
+                    ]
                 }
             });
 
-            //display individual parks once zoomed in
-            map.addLayer({
+           
+
+           //display individual parks once zoomed in
+           map.addLayer({
                 id: 'unclustered-point',
                 type: 'circle',
                 source: 'parks',
                 minzoom: 13.7,
                 paint: {
-                    'circle-color': '#f542da',
-                    'circle-radius': 4,
+                    'circle-color': '#008000',
+                    'circle-radius': 4.5,
                 }
             });
 
@@ -82,15 +95,35 @@
                 }
             });
 
+            // When a click event occurs on a feature in the places layer, open a popup at the
+            // location of the feature, with description HTML from its properties.
             map.on('click', 'unclustered-point', (e) => {
-                const features = map.queryRenderedFeatures(e.point, {
-                    layers: ['unclustered-point']
-                });
-                const name = features[0].properties.name;
-                new mapboxgl.Popup(name)
+                // Copy coordinates array.
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const name = e.features[0].properties.name;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(name)
                     .addTo(map);
             });
 
+            // Change the cursor to a pointer when the mouse is over the places layer.
+            map.on('mouseenter', 'unclustered-point', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            // Change it back to a pointer when it leaves.
+            map.on('mouseleave', 'unclustered-point', () => {
+                map.getCanvas().style.cursor = '';
+            });
 
 
 
