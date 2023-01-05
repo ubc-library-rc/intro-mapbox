@@ -2,7 +2,7 @@
 layout: default
 title: Environment Setup
 nav_order: 2
-has_children: true
+has_children: false
 ---
 # Setting up a Developer Environment
 In order to write the code that builds and renders your web maps you need a few things.

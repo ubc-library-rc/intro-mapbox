@@ -11,5 +11,4 @@ parent: Build a Webmap
 
 https://studio.mapbox.com/datasets/
 
-Goal of map: 
-remove neighbourhoods as clustering factor
+Figure out why this isnt working and how to link geojson data from external source

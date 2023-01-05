@@ -37,6 +37,7 @@ Now Let's look at what's powering this map. Navigate back to your "intro-mapbox"
             zoom: 10, // starting zoom
             projection: 'globe' // display the map as a 3D globe
         });
+
     </script>
 </body>
 

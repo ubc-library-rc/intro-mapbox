@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Map Parameters 
+title:  Parameters 
 nav_order: 2
 parent: Build a Webmap
 ---
