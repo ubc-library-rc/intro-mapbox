@@ -11,8 +11,6 @@ This section will guide you through building an interactive web map powered by M
 ### Workshop Data
 All of the data for this workshop is free and openly available. However, to get started you'll need to download and save it to your computer. 
 
-To Do
-{: .label .label-green }
 Click on the 'Download Data' button below to start the download. Once complete, **extract the contents of the .zip file**.
 
 [Download Data](mapbox-intro.zip){: .btn .btn-blue }
