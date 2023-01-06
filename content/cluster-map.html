@@ -46,19 +46,21 @@
                     'circle-radius': [
                         'step',
                         ['get', 'point_count'],
-                        12,
+                        12, //pt size for cluster of 3 or fewer
                         3,
-                        15,
+                        15, //pt size for cluster between 3 and 5
                         5,
-                        20,
+                        20, //pt size for cluster between 5 and 10
                         10,
                         25,
                         20,
                         25,
                         30,
                         35,
-                        100,
+                        50,
                         40,
+                        100,
+                        45,
                         216,
                         50
                     ]
@@ -75,7 +77,7 @@
                 minzoom: 13.7,
                 paint: {
                     'circle-color': '#008000',
-                    'circle-radius': 4.5,
+                    'circle-radius': 5.5,
                 }
             });
 
@@ -101,6 +103,7 @@
                 // Copy coordinates array.
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const name = e.features[0].properties.name;
+                const wc = e.features[0].properties.washrooms;
 
                 // Ensure that if the map is zoomed out such that multiple
                 // copies of the feature are visible, the popup appears
@@ -115,7 +118,7 @@
                     .addTo(map);
             });
 
-            // Change the cursor to a pointer when the mouse is over the places layer.
+            /*// Change the cursor to a pointer when the mouse is over the places layer.
             map.on('mouseenter', 'unclustered-point', () => {
                 map.getCanvas().style.cursor = 'pointer';
             });
@@ -124,13 +127,7 @@
             map.on('mouseleave', 'unclustered-point', () => {
                 map.getCanvas().style.cursor = '';
             });
-
-
-
-
-
-
-
+            */
         });
 
 

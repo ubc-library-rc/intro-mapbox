@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Add Data 
+title: Prepare Data 
 nav_order: 4
 parent: Build a Webmap
 ---

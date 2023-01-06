@@ -18,6 +18,8 @@ This section will break down the javascript responsible for containing, styling,
             zoom: 10, 
             projection: 'globe' 
         });
+
+        map.addControl(new mapboxgl.NavigationControl());
     </script>
 ```
     
@@ -66,13 +68,20 @@ The ```center``` option specifies the geographic centerpoint of the map when it 
 zoom: 10
 ```
 While your map can interactively zoom between discreet levels, the ```zoom``` option specifies the initial scale of your map. Mapbox zoom levels go from 0 to 22, with 22 being the most zoomed in or largest scale. Try changing the zoom level. Save your code and refresh your browser page to see your changes. 
-
+<br>
+<br>
 ### Projection
 ```js
 projection: 'globe'
 ```
 The ```projection``` option sets the projection your map will be rendered in. The boilerplate projection will display the map as a 3D globe if you zoom out enough. Take a look at the [supported projections](https://docs.mapbox.com/mapbox-gl-js/style-spec/projection/) and try a few out. 
-
+<br>
+<br>
+### Navigation Controls    
+```js
+map.addControl(new mapboxgl.NavigationControl());
+```
+The ```addControl()``` function adds buttons for zooming in and out. You can also zoom using your fingers on a track pad or the scroll wheel of a mouse.
 
 Now that we are familiar with the basic components of a map script, let's bring some data into the equation. 
 

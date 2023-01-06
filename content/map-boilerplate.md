@@ -8,10 +8,7 @@ parent: Build a Webmap
 ## Basemap 
 explain 'basemap.' explain boilerplate code concept.
 
-
-To Do
-{: .label .label-green } 
-Navigate into your "intro-mapbox" folder and locate the file ```boilerplate.html```. Replace ```PASTE_YOUR_ACCESS_TOKEN_HERE``` with your Mapbox Access Token generated earlier in this workshop. Then, save your HTML file and open it in your web browser. You may need to "right-click" and "open with" your browser of choice. You should see an interactive basemap centered on Vancouver, Canada. Use the controls to zoom in and out and pan around your web map.
+Navigate into your "intro-mapbox" folder and locate the file ```boilerplate.html```. Replace ```PASTE_YOUR_ACCESS_TOKEN_HERE``` with your Mapbox Access Token generated earlier in this workshop. Then, save your HTML file and open it in your web browser. You may need to "right-click" and "open with" your browser of choice. You should see an interactive basemap centered on Vancouver, Canada. Use the controls to zoom in and out and pan around your web map. (add controls)
 
      
 ## Basemap Code 
@@ -38,6 +35,8 @@ Now Let's look at what's powering this map. Navigate back to your "intro-mapbox"
             projection: 'globe' // display the map as a 3D globe
         });
 
+        map.addControl(new mapboxgl.NavigationControl());
+        
     </script>
 </body>
 
