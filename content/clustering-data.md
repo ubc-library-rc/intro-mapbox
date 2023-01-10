@@ -47,10 +47,18 @@ If you installed the Live Server extension to Visual Studio Code, in the blue ri
 
 <!--- ![Go Live](./images/go-live_20220109.png) --->
 <br>
-*2*{: .circle .circle-purple} Below Navigation Controls add map.on('load', () => { 
+*2*{: .circle .circle-purple} <br>
+Below Navigation Controls add 
+
+```js
+map.on('load', () => { 
 
 
         });
+```
+
+This function takes as it's parameters the functions that add and style data layers. It follows the boilerplate code to ensure that additional layers will only render once the basemap has been loaded. 
+
 
 ```html
 <html>
