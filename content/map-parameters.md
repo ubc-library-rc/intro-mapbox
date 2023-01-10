@@ -13,7 +13,7 @@ This section will break down the javascript responsible for containing, styling,
         mapboxgl.accessToken = 'YOUR_ACCESS_TOKEN_HERE'; 
         const map = new mapboxgl.Map({
             container: 'map', 
-            style: 'mapbox://styles/mapbox/streets-v11', 
+            style: 'mapbox://styles/mapbox/streets-v12', 
             center: [-123.11738086752482, 49.25090077610571], 
             zoom: 10, 
             projection: 'globe' 
@@ -49,7 +49,7 @@ The ```container``` option specifies an "HTML element in which Mapbox GL JS will
 
 ### Style 
 ```js
-style: 'mapbox://styles/mapbox/streets-v11'
+style: 'mapbox://styles/mapbox/streets-v12'
 ```
 The ```style``` option indicates the style of your basemap. While you can create your own map styles in Mapbox Studio, there are an array of Mapbox styles available for you to choose from. Look through the [gallery](https://www.mapbox.com/gallery/) for visual reference. Then replace the style in your boilerplate code with a [style URL](https://docs.mapbox.com/api/maps/styles/#mapbox-styles). Save your code and refresh your browser page. The map should now render with your chosen style. 
 <br>  

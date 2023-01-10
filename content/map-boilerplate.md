@@ -19,8 +19,8 @@ Now Let's look at what's powering this map. Navigate back to your "intro-mapbox"
 
 <head>
     <title>Boiler Plate Code</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@ Now Let's look at what's powering this map. Navigate back to your "intro-mapbox"
         mapboxgl.accessToken = 'YOUR_ACCESS_TOKEN'; //replace with your access token
         const map = new mapboxgl.Map({
             container: 'map', // container ID
-            style: 'mapbox://styles/mapbox/streets-v11', // style URL try other styles from https://www.mapbox.com/gallery/
+            style: 'mapbox://styles/mapbox/streets-v12', // style URL try other styles from https://www.mapbox.com/gallery/
             center: [-123.11738086752482, 49.25090077610571], // starting position [lng, lat]
             zoom: 10, // starting zoom
             projection: 'globe' // display the map as a 3D globe
