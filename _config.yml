@@ -1,8 +1,5 @@
 title: Introduction to Mapbox
 remote_theme: ubc-library-rc/rc-theme
-  features: 
-    - content.code.copy
-    - content.code.annotate
 color_scheme: rc
 github_repo_url: "https://github.com/ubc-library-rc/intro-mapbox/" 
 
@@ -15,12 +12,4 @@ license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-
-# Markdown Extensions for highlighting sections of a code block (https://squidfunk.github.io/mkdocs-material/reference/code-blocks/)
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
 
