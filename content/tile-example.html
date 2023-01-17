@@ -1,7 +1,7 @@
 <html>
   <head>
 
-    <title>Leaflet</title>
+    <title>Tile Example</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,6 +27,8 @@
       maxZoom: 19,
       ext: 'png'
         }).addTo(mymap);
+
+        map.addControl(new mapboxgl.NavigationControl());
 
     </script>
   </body>

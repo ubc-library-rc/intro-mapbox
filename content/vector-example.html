@@ -1,9 +1,9 @@
 <html>
 
 <head>
-    <title>Boiler Plate Code</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Vector Example</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -12,15 +12,13 @@
         mapboxgl.accessToken = 'pk.eyJ1IjoibGNyYW5kYWxsb3JhIiwiYSI6ImNraGM2d2EwYjA2MXEzMnBocmdscmwzb2YifQ.qLzdLjST_taS3roJDpdDjg'; //replace with your access token
         const map = new mapboxgl.Map({
         container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
         center: [-123.2, 49.282], // starting position [lng, lat]
-        zoom: 3.3 // starting zoom        
+        zoom: 3.3 // starting zoom      
+    
         });
-        map.on('style.load', () => {
-            map.setFog({}); // Set the default atmosphere style
-        });
-
         map.addControl(new mapboxgl.NavigationControl());
+        
     </script>
 </body>
 
