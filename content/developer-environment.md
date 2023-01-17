@@ -7,7 +7,7 @@ has_children: false
 # Setting up a Developer Environment
 In order to write the code that builds and renders your web maps you need a few things.
 
-1. First and foremost, you'll need access to internet connection and a computer with an internet browser installed. Recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers. _Note: this workshop requires that you download software from the internet onto your computer. If you are using a computer that is **not** your personal device, make sure you have permission to make such changes and are able to delete them when done._ 
+1. First and foremost, you'll need access to internet connection and a computer with an internet browser installed. Recent versions of [Mozilla Firefox](https://www.mozilla.org) and [Google Chrome](https://www.google.com/chrome/) are the recommended browsers. 
 2. To work with Mapbox you must [sign up](https://account.mapbox.com/auth/signup/) for a free account and [create an access token](https://account.mapbox.com/access-tokens/). 
 <!-- 3. Downloading the Mapbox GL JS graphics library requires running one simple command in your computer's terminal. If you have never worked in the terminal, consider browsing the Research Common's introductory workshop [here](https://ubc-library-rc.github.io/intro-shell/content/01-what-is-the-shell.html).-->
 3. Lastly, if you haven't already, you should download a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) for swift and efficient map construction. Much like a word processor helps with writing essays, a code editor makes writing code easier by formatting and color coding your work as you type.  
@@ -26,4 +26,6 @@ Mapbox's service model is based on a paid subscription, but they offer a free se
 ## Download a Code Editor 
 To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop recommends [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) or [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
-It's helpful to see your web-map change as you work. Live Server is an extension for Visual Studio Code that builds a local server to host/render? HTML documents. To install, click the gear icon in the bottom left corner of VS Code and go to extensions. Search for "Live Server" and install. 
+It's helpful to see your web-map change as you work. Live Server is an extension for Visual Studio Code that builds a local server to host HTML documents in-progress. To install, click the gear icon in the bottom left corner of VS Code and go to extensions. Search for "Live Server" and install. 
+![vs-extensions](./images/vs-extensions_20220117.jpg)
+![live-server](./images/live-server_20220117.jpg)
