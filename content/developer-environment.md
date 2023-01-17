@@ -27,5 +27,7 @@ Mapbox's service model is based on a paid subscription, but they offer a free se
 To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop recommends [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) or [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
 It's helpful to see your web-map change as you work. Live Server is an extension for Visual Studio Code that builds a local server to host HTML documents in-progress. To install, click the gear icon in the bottom left corner of VS Code and go to extensions. Search for "Live Server" and install. 
-![vs-extensions](./images/vs-extensions_20220117.jpg)
-![live-server](./images/live-server_20220117.jpg)
+
+<img src="./images/vs-extensions_20220117.jpg" alt="vs-extensions" width="400"/>
+<br>
+<img src="./images/live-server_20220117.jpg" alt="live-server" width="350"/>
