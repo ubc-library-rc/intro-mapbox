@@ -8,20 +8,21 @@
 </head>
 
 <body>
-<div id='map' style='width: 700px; height: 600px; border:none;'></div>
+<div id='map' style='width: 700px; height: 600px; margin-left: 23%;'></div>
 
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw'; //replace with your access token
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGNyYW5kYWxsb3JhIiwiYSI6ImNraGM2d2EwYjA2MXEzMnBocmdscmwzb2YifQ.qLzdLjST_taS3roJDpdDjg'; //replace with your access token
         const map = new mapboxgl.Map({
-            container: 'map', // container ID
-            style: 'mapbox://styles/mapbox/streets-v12', // style URL try other styles from https://www.mapbox.com/gallery/
-            center: [-123.11738086752482, 49.25090077610571], // starting position [lng, lat]
-            zoom: 10.7, // starting zoom
-            projection: 'globe' // display the map as a 3D globe
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-123.09418002077373, 49.232662590471946], 
+        zoom: 10.5,     
+    
         });
-
         map.addControl(new mapboxgl.NavigationControl());
 
+        // disable map zoom when using scroll
+        map.scrollZoom.disable();
 
         map.on('load', () => {
 
