@@ -6,7 +6,7 @@ parent: Build a Webmap
 ---
 # Build a Cluster Map of Vancouver Parks
 
-Now that you are familiar with the boilerplate code and how it works, the next step is adding and styling data of our own. Below is a preview of the web map we will create using the boilerplate as a basemap. (Zoom in on the iframe for map to appear)
+Now that you are familiar with the boilerplate code and how it works, the next step is adding and styling data of our own. Below is a preview of the web map we will create using the boilerplate as a basemap. 
 
 <iframe src="./cluster-map.html" style="width: 100%; height: 500px; border:none;"></iframe>
 <!-- https://github.com/ubc-library-rc/intro-mapbox/blob/5b582ed327ce2fb6a4a04db4e26ddb6baa819271/content/cluster-map.html -->
