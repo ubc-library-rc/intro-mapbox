@@ -9,8 +9,11 @@ parent: Build a Webmap
 Boilerplate code is a chunk of code that can be used as-is in multiple contexts and often provides the basis for more advanced operations. The boilerplate code for this workshop renders a basemap which we will tinker with and add to in order to build an dynamic cluster map. 
 
 ### Boilerplate Basemap 
-Let's first see what the boilerplate basemap looks like. Navigate into your "mapbox-intro" folder that you downloaded and un-zipped for this workshop. Locate the file ```boilerplate.html``` and right-click to open with VS Code (or your preferred code editor).     <br><br>
-On line 12, replace ```PASTE_YOUR_ACCESS_TOKEN_HERE``` with your Mapbox Access Token generated earlier. Then, save your HTML file and open it in your web browser. You may need to "right-click" the file in your folder and "open with" your browser of choice. You should see an interactive basemap centered on Vancouver. Use the controls to zoom in and out and pan around your web map. At the bottom of the map frame you'll see this webmap is powered by Mapbox and uses geospatial data from OpenStreetMap. Keep this browser tab open - we'll return to it in the next section.  
+Let's first see what the boilerplate basemap looks like. Navigate into your "mapbox-intro" folder that you downloaded and un-zipped for this workshop. Locate the file ```boilerplate.html``` and right-click to open with VS Code (or your preferred code editor). On line 12, replace ```PASTE_YOUR_ACCESS_TOKEN_HERE``` with your Mapbox Access Token generated earlier. Then, save your HTML file and open it in your web browser. You may need to "right-click" the file in your folder and "open with" your browser of choice. You should see an interactive basemap centered on Vancouver. Use the controls to zoom in and out and pan around your web map. At the bottom of the map frame you'll see this webmap is powered by Mapbox and uses geospatial data from OpenStreetMap.
+    
+Alternatively, if you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to "Go Live." Click "Go Live" to open the boilerplate basemap in a web browser. 
+    
+Keep this browser tab open - we'll return to it in the next section.  
     
 ### Boilerplate Code
 Now let's look at the code powering this map. Return to the ```boilerplate.html``` file in your code editor. Below is the code responsible for rendering the basemap. (Your boilerplate will also have //comments beneath the code which merely provide scaffolding for what we'll add later.)
