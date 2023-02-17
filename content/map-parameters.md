@@ -8,7 +8,7 @@ parent: Build a Webmap
 <br>
 This section will break down the javascript responsible for containing, styling, and making your map interactive. We will modify parameters of the boilerplate's script to explore how customizable even the basemap can be. The definitions that follow are drawn from Mapbox's [API reference](https://docs.mapbox.com/mapbox-gl-js/api/), which offers a comprehensive description of map properties and options.    
 
-Return to the boilerplate basemap open in your web-browser. Because we will be working back and forth between the browser page the code editor it's helpful to arrange your computer screen(s) in a way where you can either see both windows at once or are able to toggle between the two. This way, every time you modify the html code you can see the changes by refreshing the browser page. 
+Return to the boilerplate basemap open in your web-browser. Because we will be working back and forth between the browser page the code editor it's helpful to arrange your computer screen(s) in a way where you can either see both windows at once or are able to toggle between the two. This way, every time you modify the html code you can see the changes by refreshing the browser page. You'll also want to have this workshop page accessible. 
 
 
     
