@@ -23,6 +23,12 @@ Mapbox's service model is based on a paid subscription, but they offer a free se
 [Create access token](https://account.mapbox.com/access-tokens/) by giving it a name (like mapbox-workshop) and scrolling to the end of the page where a button says **Create Token**. You will be prompted to confirm your site password. A new access token should appear under the default access token. Keep this browser window open as we will need the access token in a moment. 
 
 
+```
+pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw
+```
+{: .step}
+
+
 ## Download a Code Editor 
 To make your life easier while viewing or editing code, it's good to use a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor). This workshop recommends [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) or [Sublime Text](https://www.sublimetext.com/3) will work similarly.
 
