@@ -12,7 +12,7 @@ Like Leaflet, [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) is a 
 ## Tile vs. Vector Layer Maps 
 Compared to tile layers, vector layers render on the fly, meaning they load much faster and require less storage capacity. Additionally, web maps utilizing vector graphics are freed from discreet zoom levels since vector layers have no set scales at which they can be rendered. Try zooming slowly in and out of the following two maps. The first is powered by Leaflet and uses tile layers, the second is powered by Mapbox and uses vector graphic layers. Notice how it takes a moment for the tiles to load as you zoom between scales.
 
- <iframe src="./content/tile-example.html" style="margin-right: 10%; width:110%; height:450px; border:none;"></iframe>
+ <iframe src="./content/tile-example.html" style="margin-right: 10%; width:100%; height:450px; border:none;"></iframe>
  <br>   
  <iframe src="./content/vector-example.html" style="margin-right: 10%; width:100%; height:450px; border:none;"></iframe>
 
