@@ -65,7 +65,7 @@ The HTML document is split into two main sections: the <code>head</code> and the
 
   <body>
     The body contains what you see formatted in your browser. In the code above,
-    the body contains a directions for rendering and displaying an interactive
+    the body contains directions for rendering and displaying an interactive
     map centered on Vancouver.
 
     <div>
