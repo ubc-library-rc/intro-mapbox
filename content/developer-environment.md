@@ -24,7 +24,7 @@ Mapbox's service model is based on a paid subscription, but they offer a free se
 
 
 ```
-pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsYW82Z2t2NzB3aDMzcW50a3JodWw3bDIifQ.v7jgXFEaNMPGPsufwiL6qw
+pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsazcyZ25zdjAzemwzcm1ydnNybmkwb2EifQ.ggoNMtZ32x8wK-tGYFOCDg
 ```
 {: .step}
 
