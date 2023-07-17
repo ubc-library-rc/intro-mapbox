@@ -33,8 +33,8 @@ Now we can add the workshop data source using the ```map.addSource()``` function
 
 ```js
     map.addSource('parks', {
-        type: 'geojson', // the local filepath to your GeoJSON file
-        data: 'van-parks.geojson',
+        type: 'geojson', 
+        data: 'van-parks.geojson', // the local filepath to your GeoJSON file
         cluster: true, 
         clusterMaxZoom: 14, //maximum zoom at which clusters will appear
         clusterRadius: 50 //default setting
