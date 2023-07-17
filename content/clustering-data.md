@@ -12,7 +12,7 @@ Now that you are familiar with the boilerplate code and how the script works, th
 <!-- https://github.com/ubc-library-rc/intro-mapbox/blob/5b582ed327ce2fb6a4a04db4e26ddb6baa819271/content/cluster-map.html -->
     
 
-Return to `boilerplate.html` in your code editor. We will be working entirely within the `< script>` block, copying code from this workshop site and pasting it as directed. The //comments included in the boilerplate code will guide you. Note that the code being added now is additional to the basemap and therefore will be added *after*, not inside, the map object. You can style your basemap parameters however you like. 
+Return to `boilerplate.html` in your code editor. We will be working entirely within the `< script>` block, copying code from this workshop site and pasting it as directed. The //comments included in the boilerplate code will guide you. Note that the code being added now is additional to the boilerplate reference map and therefore will be added *after*, not inside, the map object. You can style your reference map parameters however you like. 
 
 <br>
 *1*{: .circle .circle-purple} Below Navigation Controls add 
