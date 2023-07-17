@@ -25,15 +25,12 @@ Now let's look at the code powering this map. Return to the `boilerplate.html` f
 <html>
   <head>
     <title>Boilerplate Code</title>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   </head>
 
   <body>
-    <div id="map" style="width: 700px; height: 600px; margin-left: 23%;"></div>
+    <div id="map" style="width: 700px; height: 600px; margin: auto;"></div>
     <script>
       mapboxgl.accessToken = "YOUR_ACCESS_TOKEN";
       const map = new mapboxgl.Map({

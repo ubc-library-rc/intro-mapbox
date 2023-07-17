@@ -2,14 +2,14 @@
 
 <head>
     <title>Boiler Plate Code</title>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 </head>
 
 <body>
-    <div id='map' style='width: 700px; height: 600px; margin-left: 23%;'></div>
+    <div id='map' style='width: 700px; height: 600px; margin: auto;'></div>
     <script>
-        mapboxgl.accessToken = 'PASTE_YOUR_ACCESS_TOKEN_HERE'; //between the ' '
+        mapboxgl.accessToken = 'YOUR ACCESS TOKEN'; //between the ' ' pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsazcyZ25zdjAzemwzcm1ydnNybmkwb2EifQ.ggoNMtZ32x8wK-tGYFOC
         const map = new mapboxgl.Map({
             container: 'map', 
             style: 'mapbox://styles/mapbox/streets-v12', 
