@@ -44,4 +44,4 @@ Making maps is hard. And, without practice, working in the web is hard too. If y
 
 <p style="margin-top:90px"></p>
 
-<p style="color:grey; font-size:11px">This workshop was developed by Lily Demet.</p>
+<p style="color:grey; font-size:11px">This workshop was authored by Lily Demet.</p>
