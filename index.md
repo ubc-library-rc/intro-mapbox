@@ -18,9 +18,7 @@ This workshop is intended for anyone with a basic understanding of web mapping w
 Before the workshop, [sign up](https://account.mapbox.com/auth/signup/) for a free account and [create an access token](https://account.mapbox.com/access-tokens/). You'll also want to download a source code editor like [Visual Studio Code](https://code.visualstudio.com/download) for swift and efficient map construction. 
 
 If you are unfamiliar with web mapping, we recommend you checkout our [Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/) for a gentle introduction. Additionally, understanding basic cartographic principles and what code is and does will make diving into web mapping easier. Refer to these resources at any time:     
-
-- **Intro level computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.   
-     
+- **Intro level computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.    
 - **Intro level HTML, CSS and JavaScript**. [Sololearn.com offers several courses on these topics and more](https://www.sololearn.com/Courses/), but there are several other educational resources to choose from on the web if you prefer something different. You're not expected to be a pro for this workshop, but understanding these concepts will provide some very useful perspective.    
 - **Basic cartographic design concepts**. What is map making without a consideration of cartography? Axis Maps has written a phenomenal [short guide to cartography](https://www.axismaps.com/guide/), and [the web map module](https://www.axismaps.com/guide/web/should-a-map-be-interactive/) is especially relevant.
     
