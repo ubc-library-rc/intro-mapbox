@@ -6,8 +6,8 @@ has_children: true
 ---
 # Designing web maps with Mapbox 
 
-This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skillset and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided developer environment set-up, and a hands-on portion where we will modify given code to design an interactive map powered by Mapbox. By the end of this workshop you will:    
-    
+This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skill set and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided developer environment set-up, and a hands-on portion where we will modify given code to design an interactive map powered by Mapbox. By the end of this workshop you will:     
+     
 - Understand the advantages of web mapping using Mapbox GL JS    
 - Be familiar with the elements of code that make a web map work    
 - Know how to modify code to customize an interactive map of your own, and    
