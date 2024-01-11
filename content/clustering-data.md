@@ -2,7 +2,7 @@
 layout: default
 title: Clustering
 nav_order: 5
-parent: Build a Webmap
+parent: Hands On
 ---
 # Build a Cluster Map
 

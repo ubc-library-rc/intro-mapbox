@@ -2,7 +2,7 @@
 layout: default
 title:  Parameters 
 nav_order: 2
-parent: Build a Webmap
+parent: Hands On
 ---
 ## A closer look at the script: Map Parameters
 <br>

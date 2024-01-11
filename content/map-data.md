@@ -2,7 +2,7 @@
 layout: default
 title: Data 
 nav_order: 3
-parent: Build a Webmap
+parent: Hands On
 ---
 
 # Map Data

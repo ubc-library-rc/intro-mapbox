@@ -2,7 +2,7 @@
 layout: default
 title: Boilerplate Code
 nav_order: 1
-parent: Build a Webmap
+parent: Hands On
 ---
 
 ## Boilerplate
