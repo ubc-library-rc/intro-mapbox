@@ -6,24 +6,18 @@ has_children: true
 ---
 # Designing web maps with Mapbox 
 
-This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skillset and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided developer environment set-up, and a hands-on portion where we will modify given code to design an interactive map powered by Mapbox.
-
-## Learning objectives
-
-By the end of this workshop you will:    
+This workshop is intended for anyone with a basic understanding of web mapping who wishes to expand their skillset and design more customizable maps. There are 3 main sections: an introduction to Mapbox and its products, a guided developer environment set-up, and a hands-on portion where we will modify given code to design an interactive map powered by Mapbox. By the end of this workshop you will:    
     
-*1*{: .circle .circle-purple} Understand the advantages of web mapping using Mapbox GL JS    
-    
-*2*{: .circle .circle-purple} Be familiar with the elements of code that make a web map work    
-    
-*3*{: .circle .circle-purple} Know how to modify code to customize an interactive map of your own, and    
-     
-*4*{: .circle .circle-purple} Have the basic skills to pursue further tutorials more focused on your individual research interests or project needs  
+- Understand the advantages of web mapping using Mapbox GL JS    
+- Be familiar with the elements of code that make a web map work    
+- Know how to modify code to customize an interactive map of your own, and    
+- Have the basic skills to pursue further tutorials more focused on your individual research interests or project needs  
+  
 
-    
+## Prerequisites
+Before the workshop, [sign up](https://account.mapbox.com/auth/signup/) for a free account and [create an access token](https://account.mapbox.com/access-tokens/). You'll also want to download a source code editor like [Visual Studio Code](https://code.visualstudio.com/download) for swift and efficient map construction. 
 
-### Prerequisites
-Making maps is hard. And, without practice, working in the web is hard too. If you are unfamiliar with Leaflet, we recommend you checkout our [Web-mapping with Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/). Additionally, understanding basic cartographic principles and what code is and does will make diving into web mapping easier. Refer to these resources at any time:     
+If you are unfamiliar with web mapping, we recommend you checkout our [Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/) for a gentle introduction. Additionally, understanding basic cartographic principles and what code is and does will make diving into web mapping easier. Refer to these resources at any time:     
 
 - **Intro level computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.   
      
