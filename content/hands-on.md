@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Build a Webmap
+title: Hands On
 nav_order: 3
 has_children: true
 ---
-# Hands-On
+# Hands On
 This section will guide you through building an interactive web map powered by Mapbox. To begin, we will look at the code that loads a basemap in order to understand what each element does. Next, we will add data to this basemap and, building upon the given code to create an interactive map visualizing public parks in the city of vancouver. Although Mapbox Studio provides a graphical user interface (GUI) for styling spatial data, this workshop will teach you to customize a map from within a source code editor. 
 
 
