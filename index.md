@@ -35,3 +35,7 @@ If you are unfamiliar with web mapping, we recommend you checkout our [Leaflet w
 - Archive of all [Research Commons workshops](https://ubc-library-rc.github.io/all.html)
 - Contact UBC Library’s Geospatial team: `library.gis@ubc.ca`
 - Schedule a 1:1 consult with the geospatial team [here](https://libcal.library.ubc.ca/appointments/research_commons#s-lc-public-pt)
+
+<p style="margin-top:90px"></p>
+
+<p style="color:grey; font-size:11px">This workshop was authored by Lily Demet.</p>
