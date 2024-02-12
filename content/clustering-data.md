@@ -115,14 +115,14 @@ Although the basemap has various labels including park names, you may want to ma
 
     
 *6*{: .circle .circle-purple} 
-Still within the enclosing map.on() function add a point layer of unclustered parks. Remember the cluster layer is not rendered beyond the zoom level 14. By setting the minimum zoom level here to 13.7 it ensures that points for individual parks will become visible only when the user is zoomed in to the street level and clusters are no longer a meaningful way display parks. 
+Still within the enclosing map.on() function add a point layer of unclustered parks. Remember the cluster layer is not rendered beyond the zoom level 14. By setting the minimum zoom level here to 14 it ensures that points for individual parks will become visible when the user is zoomed in to the street level and clusters are no longer a meaningful way display parks. 
 
 ```js
     map.addLayer({
         id: 'unclustered-point',
         type: 'circle',
         source: 'parks',
-        minzoom: 13.7,
+        minzoom: 14,
         paint: {
             'circle-color': '#008000',
             'circle-radius': 6,
