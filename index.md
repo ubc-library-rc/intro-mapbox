@@ -12,6 +12,8 @@ This workshop is intended for anyone with a basic understanding of web mapping w
 - Be familiar with the elements of code that make a web map work    
 - Know how to modify code to customize an interactive map of your own, and    
 - Have the basic skills to pursue further tutorials more focused on your individual research interests or project needs  
+
+<iframe src="./content/cluster-map.html" style="width: 100%; height: 540px; border:none;"></iframe>
   
 
 ## Prerequisites
