@@ -29,12 +29,12 @@ This function will contain the functions that add and style layers additional to
     
 <br>
 *2*{: .circle .circle-purple} 
-Now we can add the workshop data source using the ```map.addSource()``` function. The first parameter is the name by which the dataset will be called throughout the rest of the code. The second, contained within curly brackets {}, describes the properties of the dataset itself. Paste the following code into your html document where directed. Change the ```data:``` property to the filepath of your dowloaded `van-parks.geojson`. Setting the cluster option to true tells Mapbox GL JS to add a point_count property to the dataset which we'll use in the next step to add clusters. 
+Now we can add the workshop data source using the ```map.addSource()``` function. The first parameter is the name by which the dataset will be called throughout the rest of the code. The second, contained within curly brackets {}, describes the properties of the dataset itself. Paste the following code into your html document where directed. Set the ```data:``` property to the filepath of your dowloaded `van-parks.geojson`. Because this data file is saved in the same folder as  your boilerplate, the filepath is simply `./van-parks.geojson'` Setting the cluster option to true tells Mapbox GL JS to add a point_count property to the dataset which we'll use in the next step to add clusters. 
 
 ```js
     map.addSource('parks', {
         type: 'geojson', 
-        data: 'van-parks.geojson', // the local filepath to your GeoJSON file
+        data: './van-parks.geojson', // the local filepath to your GeoJSON file
         cluster: true, 
         clusterMaxZoom: 14, //maximum zoom at which clusters will appear
         clusterRadius: 50 //default setting
