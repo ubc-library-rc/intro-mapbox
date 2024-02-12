@@ -43,7 +43,7 @@ If you’ve used a geographic information system (GIS) before then you have like
       }
     }
 ```
-Even without prior GeoJSON knowledge, can you deduce the name of this park and whether or not it has washrooms? A shapefile, in contrast, is a binary (0s and 1s, not text) format, so you wouldn't be able to read the file with human eyes.For these reasons, this workshop uses GeoJSON data. 
+Even without prior GeoJSON knowledge, can you deduce the name of this park and whether or not it has washrooms? A shapefile, in contrast, is a binary (0s and 1s, not text) format, so you wouldn't be able to read the file with human eyes. For these reasons, this workshop uses GeoJSON data. 
 
 
 ## Visualizing GeoJSON
@@ -54,7 +54,7 @@ To Do
 
 1. Go to [geojson.io](http://geojson.io) and delete existing geoJSON text on the </>JSON panel.
 2. Copy the GeoJSON text above and paste it into the blank the </>JSON panel. 
-3. On the right-hand side of the map interface there is a vertical toolbar.Use the + icon from the map toolbar to zoom into the icon that for Jonathan Rogers Park you just added to the basemap.  Click on the pop-up to see the feature properties. Here you can add new information about the park, for instance, a personal_memory column. Use the edit button (at the bottom of the same toolbar) to drag the point to another location. 
+3. On the right-hand side of the map interface there is a vertical toolbar.Use the + icon from the map toolbar to zoom into the icon that for Jonathan Rogers Park you just added to the basemap. Click on the pop-up to see the feature properties. Here you can add new information about the park, for instance, a personal_memory column. Use the edit button (at the bottom of the same toolbar) to drag the point to another location. 
 4. Open [geojson.io](http://geojson.io) again in a new tab. Drag and drop `van-parks.geojson` into the </>JSON panel. This is a quick and easy way to visualize a GeoJSON dataset before you begin web-mapping. Now let's return to the code editor and add `van-parks.geojson` to the map.  
 
 
