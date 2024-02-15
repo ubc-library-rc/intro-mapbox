@@ -19,7 +19,7 @@ Practice choosing a dataset from Vancouver's open data portal, downloading it, a
 
 4. Locate downloaded file on your computer and **move to workshop data folder** 
 
-5. Add as a source **and** as a layer inside script tag and `map.on('load', () => {` function. If you downloaded Community gardens and food trees, see example below. Style your data as you'd like. 
+5. Add as a source **and** as a layer inside script tag and `map.on('load', () => {` function. Make sure to update the name paramater within inside the source, as well as how it appears in the add layer function. If you downloaded Community gardens and food trees, see example below. Style your data as you'd like. 
 
 
 ```js
