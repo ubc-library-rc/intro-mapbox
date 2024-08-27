@@ -6,7 +6,7 @@ parent: Introduction
 ---
 
 # What is Mapbox?
-[Mapbox](https://www.mapbox.com/) is a robust Geospatial Software As A Service (saas) for developers, and includes products such as toolkits for mobile app development, navigation, web maps, and data management. Mapbox's service model is based on a paid subscription, but they offer a free service tier for those interested in using Mapbox products for learning. Today's workshop will use these free services. If this is your first time hearing about Mapbox, [How Mapbox Works](https://docs.mapbox.com/help/getting-started/) provides a great introduction.
+[Mapbox](https://www.mapbox.com/) is a robust Geospatial Software As A Service (saas) for developers, and includes products such as toolkits for mobile app development, navigation, web maps, and data management. Mapbox's service model is based on a paid subscription, but they offer a free service tier for those interested in using Mapbox products for learning. Today's workshop will use these free services **but you don't need to create an account**. An access token will be provided for you. If this is your first time hearing about Mapbox, [How Mapbox Works](https://docs.mapbox.com/help/getting-started/) provides a great introduction.
 
 
 
