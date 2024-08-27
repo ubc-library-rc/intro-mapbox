@@ -16,5 +16,5 @@ Compared to tile layers, **vector layers render on the fly**, meaning they load 
  <br>   
  <iframe src="./content/vector-example.html" style="margin-right: 10%; width:100%; height:450px; border:none;"></iframe>
 
-In the next section we will look more closely at some code and learn what each statement does and how different languages work together to design and execute a map for display in a web browser. To do that, we must first set up a developer environment. 
+In the next section we will look more closely at some code and learn what each statement does and how different languages work together to design and execute a map for display in a web browser. To do that, we must first set up a **developer environment**. 
 
