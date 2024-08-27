@@ -18,7 +18,7 @@ pk.eyJ1IjoibGlseWRlbWV0IiwiYSI6ImNsazcyZ25zdjAzemwzcm1ydnNybmkwb2EifQ.ggoNMtZ32x
 {: .step}
 
 
-2. Lastly, you'll need a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) for swift and efficient map construction. Much like a word processor helps with writing essays, a code editor makes writing code easier by formatting and color coding your work as you type. The workshop recommends [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/download) will work similarly.
+2. Lastly, you'll need a [source code editor](https://en.wikipedia.org/wiki/Source_code_editor) for swift and efficient map construction. Much like a word processor helps with writing essays, a code editor makes writing code easier by formatting and color coding your work as you type. The workshop recommends [Visual Studio Code](https://code.visualstudio.com/download).
 
 <!-- ## Create a Mapbox Account and Access Token
 Mapbox's service model is based on a paid subscription, but they offer a free service tier for those interested in using their products for learning, with enough resources to get you started. Use of services is authorized on a user-basis by an **access token.** 
