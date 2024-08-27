@@ -16,8 +16,11 @@ This workshop is intended for anyone with a basic understanding of web mapping w
 <iframe src="./content/cluster-map.html" style="width: 100%; height: 540px; border:none;"></iframe>
   
 
-## Prerequisites
-Before the workshop, [sign up](https://account.mapbox.com/auth/signup/) for a free account and [create an access token](https://account.mapbox.com/access-tokens/). You'll also want to download a source code editor like [Visual Studio Code](https://code.visualstudio.com/download) for swift and efficient map construction. 
+## Before The Workshop 
+
+Before the workshop, download a source code editor for swift and efficient map construction. The workshop demonstration uses [Visual Studio Code](https://code.visualstudio.com/download), but other editors like [Notepad++](https://notepad-plus-plus.org/) and [Sublime Text](https://www.sublimetext.com/download) will work similarly.
+
+Note: Although we we will be working with Mapbox code libraries, you do *not* need to sign up for an account. An access token will be provided for you during the workshop, and is all you need to get started making web maps powered by Mapbox.
 
 If you are unfamiliar with web mapping, we recommend you checkout our [Leaflet workshop](https://ubc-library-rc.github.io/gis-intro-leaflet/) for a gentle introduction. Additionally, understanding basic cartographic principles and what code is and does will make diving into web mapping easier. Refer to these resources at any time:     
 - **Intro level computer programming**. [Matt Adesanya's *A Gentler Introduction to Programming*](https://www.freecodecamp.org/news/a-gentler-introduction-to-programming-1f57383a1b2c/) is a great starting point, and will be more than you need for this workshop.    
