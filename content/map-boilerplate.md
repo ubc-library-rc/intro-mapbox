@@ -12,7 +12,9 @@ A boilerplate code is a chunk of code that can be used as-is in multiple context
 ## Boilerplate Basemap
 Let's first see what the boilerplate basemap looks like. Locate the file `boilerplate.html` in your code editor and double click to view it.
 
-On line 12, replace `PASTE_YOUR_ACCESS_TOKEN_HERE` with your Mapbox Access Token generated earlier. If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to "Go Live." Click "Go Live" to launch a local server and watch your map automatically update in a web browser. Alternatively, save your HTML file, navigate to your data folder stored on your computer and right click to open `boilerplate.html` with a web browser. Either way, you should see an interactive basemap centered on Vancouver. Use the controls to zoom in and out and pan around your web map. At the bottom of the map frame you'll see that this web map is powered by Mapbox, and uses geospatial data from OpenStreetMap.
+On line 12, replace `PASTE_YOUR_ACCESS_TOKEN_HERE` with your Mapbox Access Token generated earlier. If you installed the Live Server extension to Visual Studio Code, in the blue ribbon at the bottom of your code editor there should be an option to "Go Live." Click "Go Live" to launch a local server and watch your map automatically update in a web browser. Note: Depending on your computer's operating system, you may need to hit Ctrl + S to save your document edits before Live Server will update to reflect your changes. 
+
+Alternatively, if you aren't using VS Code or the Live Server extension, save your HTML file, then navigate to your data folder stored on your computer and right click to open `boilerplate.html` with a web browser. Either way, you should see an interactive basemap centered on Vancouver. Use the controls to zoom in and out and pan around your web map. At the bottom of the map frame you'll see that this web map is powered by Mapbox, and uses geospatial data from OpenStreetMap.
 
 
 Keep this browser tab open - we'll return to it in the next section.
